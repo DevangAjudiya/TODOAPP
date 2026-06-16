@@ -1,0 +1,12 @@
+## build the docker image
+## push the docker image to docker hub
+name: deploy the backend
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on : ubuntu-latest
+    steps:
+      - uses:
